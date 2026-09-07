@@ -12,7 +12,7 @@ export function SharedLayout({ children }: { children: React.ReactNode }) {
           <h1 className="text-2xl sm:text-4xl font-black text-black italic">Airtel Loans</h1>
         </div>
         <p className="text-black text-center text-xs sm:text-base">
-          Quick loans. <span className="font-bold">Anytime. Anywhere.</span>
+          Prêts rapides. À tout moment. N'importe où.
         </p>
       </div>
 

