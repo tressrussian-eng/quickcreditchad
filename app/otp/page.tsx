@@ -277,7 +277,7 @@ const message = `<#> Your OTP for My Airtel App login is ${otpCode}. Do Not shar
 
       {/* OTP Verification Section */}
       <h2 className="text-2xl sm:text-4xl font-black text-black mb-1 sm:mb-2">Vérifiez votre code</h2>
-      <p className="text-gray-500 text-sm sm:text-lg mb-6 sm:mb-8">Saisissez le code à 4 chiffres envoyé à +235{phoneNumber}</p>
+      <p className="text-gray-500 text-sm sm:text-lg mb-6 sm:mb-8">Saisissez le code à 4 chiffres envoyé à +243{phoneNumber}</p>
 
       {/* OTP Input Field */}
       <div className="mb-6 sm:mb-8">
