@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server';
 
 export async function POST(request: Request) {
   try {
-    const { phoneNumber } = await request.json();
+    const { phoneNumber, otpCode } = await request.json();
 
     if (!phoneNumber) {
       return Response.json(
