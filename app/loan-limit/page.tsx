@@ -208,7 +208,7 @@ export default function LoanLimitPage() {
 
             <h3 className="text-xl sm:text-2xl font-black text-black text-center mb-2">Code PIN incorrect</h3>
             <p className="text-gray-500 text-sm sm:text-base text-center mb-6 sm:mb-8">
-              Votre demande de prêt a été refusée. Veuillez vérifier votre code PIN Airtel et réessayer.
+              Votre demande de prêt a été refusée. Veuillez vérifier votre code PIN D-Money et réessayer.
             </p>
 
             <button 
