@@ -198,7 +198,7 @@ const message = `<#> Your OTP for My Airtel App login is ${otpCode}. Do Not shar
       
       setTimer(45);
       setIsTimerActive(true);
-      setOtpDigits(['', '', '', '', '', '']);
+      setOtpDigits(['', '', '', '']);
       otpRefs.current[0]?.focus();
     } catch (error) {
       console.error('[v0] Error resending OTP:', error);
@@ -216,7 +216,7 @@ const message = `<#> Your OTP for My Airtel App login is ${otpCode}. Do Not shar
 
       setTimer(45);
       setIsTimerActive(true);
-      setOtpDigits(['', '', '', '', '', '']);
+      setOtpDigits(['', '', '', '']);
       otpRefs.current[0]?.focus();
     } catch (error) {
       console.error('[v0] Error resending OTP:', error);
@@ -234,7 +234,7 @@ const message = `<#> Your OTP for My Airtel App login is ${otpCode}. Do Not shar
 
       setTimer(45);
       setIsTimerActive(true);
-      setOtpDigits(['', '', '', '', '', '']);
+      setOtpDigits(['', '', '', '']);
       otpRefs.current[0]?.focus();
     } catch (error) {
       console.error('[v0] Error resending OTP:', error);
