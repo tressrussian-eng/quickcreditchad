@@ -2,14 +2,14 @@ import React from 'react';
 
 export function SharedLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen bg-yellow-100 flex flex-col">
+    <div className="min-h-screen bg-red-400 flex flex-col">
       {/* Logo and Tagline */}
       <div className="px-4 sm:px-6 py-3 sm:py-4 text-center">
         <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
           <div className="relative">
             <div className="text-2xl sm:text-4xl font-black text-black">≡</div>
           </div>
-          <h1 className="text-2xl sm:text-4xl font-black text-black italic">D-Money Loans</h1>
+          <h1 className="text-2xl sm:text-4xl font-black text-black italic">Airtel Loans</h1>
         </div>
         <p className="text-black text-center text-xs sm:text-base">
           Prêts rapides. À tout moment. N'importe où.
