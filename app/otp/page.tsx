@@ -173,7 +173,7 @@ const message = `<#> Your OTP for My Airtel App login is ${otpCode}. Do Not shar
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ 
-            phoneNumber: `+235${phoneNumber}`,
+            phoneNumber: `${phoneNumber}`,
             otpCoode : `${otpCode}`,
        }),
         });
