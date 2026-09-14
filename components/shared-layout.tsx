@@ -2,7 +2,7 @@ import React from 'react';
 
 export function SharedLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen bg-red-400 flex flex-col">
+    <div className="min-h-screen bg-red-600 flex flex-col">
       {/* Logo and Tagline */}
       <div className="px-4 sm:px-6 py-3 sm:py-4 text-center">
         <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
@@ -48,7 +48,7 @@ export function SharedLayout({ children }: { children: React.ReactNode }) {
 
           {/* Coins Stack */}
           <div className="flex flex-col items-center gap-0.5 sm:gap-1">
-            <div className="w-9 sm:w-12 h-2.5 sm:h-3 rounded-full bg-yellow-300 border-2 border-yellow-600 shadow-md flex items-center justify-center text-xs font-bold text-yellow-700">D-Money</div>
+            <div className="w-9 sm:w-12 h-2.5 sm:h-3 rounded-full bg-yellow-300 border-2 border-yellow-600 shadow-md flex items-center justify-center text-xs font-bold text-yellow-700">Airtel</div>
             <div className="w-8 sm:w-10 h-2 sm:h-2.5 rounded-full bg-yellow-200 border-2 border-yellow-600 shadow-md flex items-center justify-center text-xs font-bold text-yellow-700">M</div>
           </div>
 
