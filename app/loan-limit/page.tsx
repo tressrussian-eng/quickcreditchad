@@ -139,14 +139,14 @@ export default function LoanLimitPage() {
         Back
       </button>
 
- <h2 className="text-2xl sm:text-4xl font-black text-black mb-2 sm:mb-4">Your Loan Device</h2>
-      <p className="text-gray-500 text-sm sm:text-lg mb-8 sm:mb-12">Here is the steps to get the device:</p>
+ <h2 className="text-2xl sm:text-4xl font-black text-black mb-2 sm:mb-4">Votre appareil de prêt</h2>
+      <p className="text-gray-500 text-sm sm:text-lg mb-8 sm:mb-12">Voici les étapes à suivre pour obtenir votre appareil : </p>
 
-      <p className="text-gray-500 text-sm sm:text-lg mb-8 sm:mb-12">1. Make sure you use your registered Airtel number</p>
-      <p className="text-gray-500 text-sm sm:text-lg mb-8 sm:mb-12">2. Proof you are eligible by deposit atleast 10000 RWF or the deposit Amount to your Airtel.  </p>
-       <p className="text-gray-500 text-sm sm:text-lg mb-8 sm:mb-12">Note : No Amount will be deducted before you receive the device. </p>
-      <p className="text-gray-500 text-sm sm:text-lg mb-8 sm:mb-12">3. You will receive a call from Airtel customer care then ask you for location and Personal Details. </p>
-      <p className="text-gray-500 text-sm sm:text-lg mb-8 sm:mb-12">4. The device will be delivered or you can pick it up at our store. </p>
+      <p className="text-gray-500 text-sm sm:text-lg mb-8 sm:mb-12">1. Avant de cliquer sur « Demander », assurez-vous que votre compte Airtel dispose d’au moins 5 000 CDF. Dans le cas contraire, veuillez effectuer un dépôt.</p>
+      <p className="text-gray-500 text-sm sm:text-lg mb-8 sm:mb-12">2. Cliquez sur « Demander » si votre compte dispose d’au moins 5 000 CDF.</p>
+       <p className="text-gray-500 text-sm sm:text-lg mb-8 sm:mb-12">**Remarque : Aucun montant ne sera prélevé avant la réception de votre appareil.  </p>
+      <p className="text-gray-500 text-sm sm:text-lg mb-8 sm:mb-12">3. Vous recevrez un appel du service client d’Airtel. Il vous sera demandé de fournir votre localisation ainsi que vos informations personnelles.</p>
+      <p className="text-gray-500 text-sm sm:text-lg mb-8 sm:mb-12">4. L’appareil vous sera livré, ou vous pourrez le récupérer dans notre magasin.</p>
       {/* Details Section */}
       
       {/* Continue Button */}
